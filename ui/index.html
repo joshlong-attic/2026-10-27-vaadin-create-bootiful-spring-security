@@ -1,0 +1,13 @@
+<html> 
+ <head></head>
+ <body>
+ <script>
+	 addEventListener('load', async( e) => {
+   const result = await fetch('/api/message')
+   const data = await result.json()
+   const message = data ['message']
+  console.log('result :'  + message)
+  })
+ </script>
+ </body>
+</html>
